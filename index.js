@@ -1,7 +1,5 @@
 "use strict"
 
-//import("marked.esm.js")
-
 marked.setOptions({breaks: true})
 let editor = document.querySelector('#editor')
 editor.addEventListener('input', parseMarkup)
