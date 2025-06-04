@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="author" content="joshua">
+   <meta name="description" content="javascript markdown previewer">
+   <meta name="keywords" content="javascript, markdown, interpreter">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>FCC FELP Markdown Previewer</title>
+   <link rel="icon" type="image/x-icon" href="./favicon.ico">
+   <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <main>
+      <section>
+         <textarea id="editor">
+# Markdown
+## It's like HTML shorthand
+
+- You can make lists
+- With two items
+- Wait, **three**!
+- ...or more
+
+You can quote little `code blocks` and even
+
+```
+REALLY
+BIG
+BLOCKS
+of code
+```
+
+That wasn't code, of course (in any language that I'm aware of [English isn't *code*]).
+
+> Apparently, this is a block quote.
+         
+I'm not making this stuff up. Really! [This place](https://help.github.com/en/articles/basic-writing-and-formatting-syntax) even supports the notion.
+
+Here's an image, for fun:
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png)
+         </textarea>
+         <div id="preview">this is what is *should* look like</div>
+      </section>
+   </main>
+   <script src="index.js" defer></script>
+</body>
+</html>
